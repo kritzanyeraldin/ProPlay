@@ -1,2 +1,7 @@
 export { default as Login } from './Login'
-export { default as SecondView } from './SecondView'
+export { default as Profile} from './Profile'
+export { default as Foro} from './Foro'
+export { default as Languages} from './Languages'
+export { default as Stadistic} from './Stadistic'
+export { default as Help} from './Help'
+export { default as Menu} from './Menu'

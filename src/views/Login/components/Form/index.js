@@ -60,7 +60,7 @@ const Form = () => {
 						fullWidth
 						label='Password'
 					/>
-					<Button variant='contained' LinkComponent={Link} to={'/second'}>Login</Button>
+					<Button variant='contained' LinkComponent={Link} to={'/menu'}>Login</Button>
 				</Box>
 			</Box>
 		</Box>
