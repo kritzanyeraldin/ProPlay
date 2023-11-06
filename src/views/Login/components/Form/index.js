@@ -1,4 +1,5 @@
 import { Box, Button, TextField, Typography } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const Form = () => {
 	return (
@@ -12,7 +13,6 @@ const Form = () => {
 				display='flex'
 				flexDirection='column'
 				width={400}
-				
 				py={10}
 			>
 				<Box
@@ -34,6 +34,11 @@ const Form = () => {
 					<Button
 						variant='contained'
 						color='secondary'
+						sx={{
+							alignSelf: "flex-end"
+						}}
+						LinkComponent={Link}
+						to={'/signup'}
 					>
 						Create account
 					</Button>
@@ -55,7 +60,7 @@ const Form = () => {
 						fullWidth
 						label='Password'
 					/>
-					<Button variant='contained'>Login</Button>
+					<Button variant='contained' LinkComponent={Link} to={'/second'}>Login</Button>
 				</Box>
 			</Box>
 		</Box>

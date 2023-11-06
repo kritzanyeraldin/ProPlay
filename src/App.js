@@ -5,13 +5,13 @@ import { InternalLayout } from './layouts'
 
 
 function App() {
-  return (
-    <>
+	return (
+		<>
 			<Routes>
-      <Route
-						path='/'
-						Component={Login}
-					/>
+				<Route
+					path='/'
+					Component={Login}
+				/>
 				<Route Component={InternalLayout}>
 					<Route
 						path='/second'
@@ -24,9 +24,9 @@ function App() {
 				</Route>
 			</Routes>
 		</>
-    
 
-  );
+
+	);
 }
 
 export default App;
