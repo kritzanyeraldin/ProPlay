@@ -22,6 +22,7 @@ const Languages = () => {
     borderRadius: '10px',
     padding: '10px',
     margin: '10px',
+    textAlign: 'center',
   };
 
   const imageStyle = {
@@ -29,15 +30,20 @@ const Languages = () => {
     height: '200px',
   };
 
+  const h2Style = {
+    textAlign: 'center', // Centrar horizontalmente el h2
+  };
+
   const buttonStyle = {
     margin: '5px',
     variant: "contained",
-    color: "primary",
+    color: "#000000DE",
+    backgroundColor: '#9E9E9E',
   };
 
   return (
     <div>
-      <h2>¿Qué lenguaje deseas aprender?</h2>
+      <h2 style={h2Style}>¿Qué lenguaje deseas aprender?</h2>
       <Box display="flex" flexWrap="wrap">
         {languages.map((language) => (
           <Box key={language.id} style={languageBoxStyle}>
