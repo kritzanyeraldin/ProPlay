@@ -16,6 +16,11 @@ const Description = ({ language, onClose }) => {
     backgroundColor: '#9E9E9E',
   };
 
+  const imageStyle = {
+    width: '400px',
+    height: '400px',
+  };
+
   return (
     <Box display="flex" justifyContent="space-between">
       <Box width="50%">
@@ -28,7 +33,7 @@ const Description = ({ language, onClose }) => {
           Volver
         </Button>
         <Typography variant="h5">{language.name}</Typography>
-        <img src={language.image} alt={`Lenguaje: ${language.name}`} style={{ width: '100%' }} />
+        <img src={language.image} alt={`Lenguaje: ${language.name}`} style={imageStyle} />
         <Typography variant="body1">{language.description}</Typography>
       </Box>
       <Box width="50%">
