@@ -1,171 +1,232 @@
-import { Menu } from "@mui/icons-material";
-import { Box, Typography, Button, AppBar, Toolbar, IconButton, Drawer, Avatar } from "@mui/material";
+import { Menu } from '@mui/icons-material'
+import {
+	Box,
+	Typography,
+	Button,
+	AppBar,
+	Toolbar,
+	IconButton,
+	Drawer,
+	Avatar,
+} from '@mui/material'
 
-import { Link, Outlet } from "react-router-dom";
+import {
+	Link,
+	Navigate,
+	Outlet,
+	matchPath,
+	useLocation,
+	useNavigate,
+} from 'react-router-dom'
+import { getAllowedRoutes } from '../../utils'
 
 const drawerWidth = 200
 
 const routes = [
-  {
-    path: "/profile",
-    label: "Profile",
-  },
-  {
-    path: "/menu",
-    label: "Menu",
-  },
-  {
-    path: "/languages",
-    label: "Languages",
-  },
-  {
-    path: "/stadistic",
-    label: "Stadistic",
-  },
-  {
-    path: "/foro",
-    label: "Foro",
-  },
-  {
-    path: "/help",
-    label: "Help",
-  },
-];
-
-const drawer = (
-  <Toolbar
-    sx={{
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 8,
-      py: 4
-    }}
-  >
-    <Typography fontSize={30}>PROPLAY</Typography>
-
-    <Box display="flex" flexDirection="column" width={120} gap={2}>
-      {routes.map((route) => {
-        return (
-          <Button key={route.path} LinkComponent={Link} to={route.path} variant="contained">
-            {route.label}
-          </Button>
-        );
-      })}
-    </Box>
-  </Toolbar>
-)
+	{
+		path: '/profile',
+		label: 'Profile',
+	},
+	{
+		path: '/menu',
+		label: 'Menu',
+	},
+	{
+		path: '/languages',
+		label: 'Languages',
+	},
+	{
+		path: '/stadistic',
+		label: 'Stadistic',
+	},
+	{
+		path: '/foro',
+		label: 'Foro',
+	},
+	{
+		path: '/help',
+		label: 'Help',
+	},
+	{
+		path: '/admin',
+		label: 'Admin',
+	},
+]
 
 const InternalLayout = () => {
-  return (
-    // <Box bgcolor="peru" display="flex" height="100vh">
-    //   <Box
-    //     display="flex"
-    //     flexDirection="column"
-    //     alignItems="center"
-    //     gap={9}
-    //     sx={{
-    //       bgcolor: "gray",
-    //       px: 3,
-    //       py: 4,
-    //     }}
-    //   >
+	const userAsString = localStorage.getItem('user')
+	const navigate = useNavigate()
+	const location = useLocation()
 
-    //     <Drawer
+	if (!userAsString) return <Navigate to='/login' />
 
-    //       sx={{
-    //         // display: { xs: 'none', sm: 'block' },
-    //         width: 270
-    //       }}
-    //       variant="permanent"
-    //     >
-    //       {drawer}
-    //     </Drawer>
+	const user = JSON.parse(userAsString)
+	const allowedRoutes = getAllowedRoutes(routes, user)
 
+	const isAllowed = allowedRoutes.some(route =>
+		matchPath(
+			{
+				path: route.path,
+				end: true,
+			},
+			location.pathname
+		)
+	)
 
+	if (!isAllowed)
+		return (
+			<Navigate
+				to={allowedRoutes[0].path}
+				replace
+			/>
+		)
 
-    //   </Box>
+	const drawer = (
+		<Toolbar
+			sx={{
+				display: 'flex',
+				flexDirection: 'column',
+				gap: 8,
+				py: 4,
+			}}
+		>
+			<Typography fontSize={30}>PROPLAY</Typography>
 
+			<Box
+				display='flex'
+				flexDirection='column'
+				width={120}
+				gap={2}
+			>
+				{allowedRoutes.map(route => {
+					return (
+						<Button
+							key={route.path}
+							LinkComponent={Link}
+							to={route.path}
+							variant='contained'
+						>
+							{route.label}
+						</Button>
+					)
+				})}
+			</Box>
+		</Toolbar>
+	)
 
+	return (
+		// <Box bgcolor="peru" display="flex" height="100vh">
+		//   <Box
+		//     display="flex"
+		//     flexDirection="column"
+		//     alignItems="center"
+		//     gap={9}
+		//     sx={{
+		//       bgcolor: "gray",
+		//       px: 3,
+		//       py: 4,
+		//     }}
+		//   >
 
+		//     <Drawer
 
-    //   <Box flexGrow={1}>
-    //     <AppBar
-    //       position="fixed"
-    //       sx={{
-    //         width: "calc(100% - 200px)"
-    //       }}
-    //       elevation={0}
-    //     >
-    //       <Toolbar>
-    //         <IconButton
-    //           color="inherit"
-    //           aria-label="open drawer"
-    //           edge="start"
-    //           // onClick={handleDrawerToggle}
-    //           sx={{ mr: 2, display: { sm: "none" } }}
-    //         >
-    //           <Menu />
-    //         </IconButton>
-    //         <Typography variant="h6" noWrap component="div">
-    //           Responsive drawer
-    //         </Typography>
-    //       </Toolbar>
-    //     </AppBar>
+		//       sx={{
+		//         // display: { xs: 'none', sm: 'block' },
+		//         width: 270
+		//       }}
+		//       variant="permanent"
+		//     >
+		//       {drawer}
+		//     </Drawer>
 
-    //     <Outlet />
-    //   </Box>
-    // </Box>
-    <Box sx={{ display: 'flex' }}>
-      <AppBar
-        position="fixed"
-        elevation={0}
-        sx={{
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px` }
-        }}
-      >
-        <Toolbar sx={{
-          justifyContent: { xs: "space-between", sm: "flex-end" }
-        }}>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            // onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <Menu />
-          </IconButton>
-          <Box
-            display='flex'
-            gap={3}
-            px={4}
-            // bgcolor='red'
-            alignItems='center'
-          >
-            <Avatar
-              sx={{ bgcolor: 'red', justifySelf: 'flex-end' }}
-              alt="Remy Sharp"
-              src="/broken-image.jpg"
-            >
-              B
-            </Avatar>
+		//   </Box>
 
-            <Button variant='contained' size= 'small' LinkComponent={Link} to={'/'} sx={{height:30}}>
-              Cerrar Sesión
-            </Button>
-          </Box>
+		//   <Box flexGrow={1}>
+		//     <AppBar
+		//       position="fixed"
+		//       sx={{
+		//         width: "calc(100% - 200px)"
+		//       }}
+		//       elevation={0}
+		//     >
+		//       <Toolbar>
+		//         <IconButton
+		//           color="inherit"
+		//           aria-label="open drawer"
+		//           edge="start"
+		//           // onClick={handleDrawerToggle}
+		//           sx={{ mr: 2, display: { sm: "none" } }}
+		//         >
+		//           <Menu />
+		//         </IconButton>
+		//         <Typography variant="h6" noWrap component="div">
+		//           Responsive drawer
+		//         </Typography>
+		//       </Toolbar>
+		//     </AppBar>
 
+		//     <Outlet />
+		//   </Box>
+		// </Box>
+		<Box sx={{ display: 'flex' }}>
+			<AppBar
+				position='fixed'
+				elevation={0}
+				sx={{
+					width: { sm: `calc(100% - ${drawerWidth}px)` },
+					ml: { sm: `${drawerWidth}px` },
+				}}
+			>
+				<Toolbar
+					sx={{
+						justifyContent: { xs: 'space-between', sm: 'flex-end' },
+					}}
+				>
+					<IconButton
+						color='inherit'
+						aria-label='open drawer'
+						edge='start'
+						// onClick={handleDrawerToggle}
+						sx={{ mr: 2, display: { sm: 'none' } }}
+					>
+						<Menu />
+					</IconButton>
+					<Box
+						display='flex'
+						gap={3}
+						px={4}
+						// bgcolor='red'
+						alignItems='center'
+					>
+						<Avatar
+							sx={{ bgcolor: 'red', justifySelf: 'flex-end' }}
+							alt='Remy Sharp'
+							src='/broken-image.jpg'
+						>
+							B
+						</Avatar>
 
-        </Toolbar>
-      </AppBar>
-      <Box
-        component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-        aria-label="mailbox folders"
-      >
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        {/* <Drawer
+						<Button
+							variant='contained'
+							size='small'
+							sx={{ height: 30 }}
+							onClick={() => {
+								localStorage.removeItem('user')
+								navigate('/login')
+							}}
+						>
+							Cerrar Sesión
+						</Button>
+					</Box>
+				</Toolbar>
+			</AppBar>
+			<Box
+				component='nav'
+				sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+				aria-label='mailbox folders'
+			>
+				{/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+				{/* <Drawer
         container={container}
         variant="temporary"
         open={mobileOpen}
@@ -180,26 +241,33 @@ const InternalLayout = () => {
         >
         {drawer}
        </Drawer> */}
-        <Drawer
-          variant="permanent"
-          sx={{
-            display: { xs: 'none', sm: 'block' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth }            
-          }}
-          open
-        >
-          {drawer}
-        </Drawer>
-      </Box>
-      <Box
-        component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
-      >
-        <Toolbar />
-        <Outlet />
-      </Box>
-    </Box>
-  );
-};
+				<Drawer
+					variant='permanent'
+					sx={{
+						display: { xs: 'none', sm: 'block' },
+						'& .MuiDrawer-paper': {
+							boxSizing: 'border-box',
+							width: drawerWidth,
+						},
+					}}
+					open
+				>
+					{drawer}
+				</Drawer>
+			</Box>
+			<Box
+				component='main'
+				sx={{
+					flexGrow: 1,
+					p: 3,
+					width: { sm: `calc(100% - ${drawerWidth}px)` },
+				}}
+			>
+				<Toolbar />
+				<Outlet />
+			</Box>
+		</Box>
+	)
+}
 
-export default InternalLayout;
+export default InternalLayout

@@ -1,7 +1,36 @@
 import { Box, Button, TextField, Typography } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { MOCKED_ADMIN, MOCKED_USER } from '../../../../config/constants'
 
 const Form = () => {
+	const [credentials, setCredentials] = useState({
+		user: '',
+		password: '',
+	})
+	const navigate = useNavigate()
+
+	const login = () => {
+		let user
+		// TODO: validate credentials (email, password)
+		if (
+			MOCKED_USER.user === credentials.user &&
+			MOCKED_USER.password === credentials.password
+		)
+			user = MOCKED_USER
+		else if (
+			MOCKED_ADMIN.user === credentials.user &&
+			MOCKED_ADMIN.password === credentials.password
+		)
+			user = MOCKED_ADMIN
+
+		if (!user) return alert('No se pudo logear correctamente')
+
+		localStorage.setItem('user', JSON.stringify(user))
+		if (user.isAdmin) return navigate('/admin')
+		if (!user.isAdmin) return navigate('/menu')
+	}
+
 	return (
 		<Box
 			flexGrow={1}
@@ -35,7 +64,7 @@ const Form = () => {
 						variant='contained'
 						color='secondary'
 						sx={{
-							alignSelf: "flex-end"
+							alignSelf: 'flex-end',
 						}}
 						LinkComponent={Link}
 						to={'/signup'}
@@ -55,12 +84,31 @@ const Form = () => {
 					<TextField
 						fullWidth
 						label='User'
+						value={credentials.user}
+						onChange={event =>
+							setCredentials(credentials => ({
+								...credentials,
+								user: event.target.value,
+							}))
+						}
 					/>
 					<TextField
 						fullWidth
 						label='Password'
+						value={credentials.password}
+						onChange={event =>
+							setCredentials(credentials => ({
+								...credentials,
+								password: event.target.value,
+							}))
+						}
 					/>
-					<Button variant='contained' LinkComponent={Link} to={'/menu'}>Login</Button>
+					<Button
+						variant='contained'
+						onClick={login}
+					>
+						Login
+					</Button>
 				</Box>
 			</Box>
 		</Box>
