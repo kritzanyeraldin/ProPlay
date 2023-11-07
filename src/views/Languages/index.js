@@ -1,7 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Box, Button } from '@mui/material';
+import Description from './Description';
 
 const Languages = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
+
+  const showDescriptionHandler = (language) => {
+    setSelectedLanguage(language);
+  };
+
+  const hideDescriptionHandler = () => {
+    setSelectedLanguage(null);
+  };
+
   const languages = [
     {
       id: 1,
@@ -91,23 +102,26 @@ const Languages = () => {
     backgroundColor: '#9E9E9E',
   };
 
+
   return (
     <div>
-      <h2 style={h2Style}>¿Qué lenguaje deseas aprender?</h2>
-      <Box display="flex" flexWrap="wrap">
-        {languages.map((language) => (
-          <Box key={language.id} style={languageBoxStyle}>
-            <img
-              src={language.image}
-              alt={`Lenguaje: ${language.name}`}
-              style={imageStyle}
-            />
-            <Button style={buttonStyle}>
-              Ver más
-            </Button>
-          </Box>
-        ))}
-      </Box>
+      {selectedLanguage ? (
+        <Description language={selectedLanguage} onClose={hideDescriptionHandler} />
+      ) : (
+        <div>
+        <h2 style={h2Style}>¿Qué lenguaje deseas aprender?</h2>
+        <Box display="flex" flexWrap="wrap">
+          {languages.map((language) => (
+            <Box key={language.id} style={languageBoxStyle}>
+              <img src={language.image} alt={`Lenguaje: ${language.name}`} style={imageStyle} />
+              <Button style={buttonStyle} onClick={() => showDescriptionHandler(language)}>
+                Ver más
+              </Button>
+            </Box>
+          ))}
+        </Box>
+        </div>
+      )}
     </div>
   );
 };
