@@ -23,7 +23,8 @@ const Course = ({ course, onStartClick, onPracticeClick, onDeleteClick }) => {
 
   const buttonStyle = {
     margin: '5px',
-    color: 'white',
+    variant:"contained",
+    color:"black",
     backgroundColor: 'grey',
   };
 
@@ -32,7 +33,8 @@ const Course = ({ course, onStartClick, onPracticeClick, onDeleteClick }) => {
     top: '5px',
     right: '5px',
     backgroundColor: 'grey',
-    color: 'white',
+    variant:"contained",
+    color:"white",
   };
 
   return (
