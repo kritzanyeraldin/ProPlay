@@ -13,8 +13,8 @@ const UserPreferences = () => {
   const buttonStyle = {
     margin: '5px',
     variant: "contained",
-    color: "black",
-    backgroundColor: 'grey',
+    color: "#000000DE",
+    backgroundColor: '#9E9E9E',
   };
 
   return (
