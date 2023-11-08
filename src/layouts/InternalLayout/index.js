@@ -115,7 +115,7 @@ const InternalLayout = () => {
     //     <Outlet />
     //   </Box>
     // </Box>
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', height: '100%' }}>
       <AppBar
         position="fixed"
         elevation={0}
