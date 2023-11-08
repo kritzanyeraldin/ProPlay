@@ -14,7 +14,7 @@ import { addCourse } from './views/Course/components'
 
 function App() {
 	return (
-		<Box height='100vh'>
+		<>
 			<Routes>
 				<Route
 					path='/'
