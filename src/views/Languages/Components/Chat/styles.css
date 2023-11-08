@@ -1,0 +1,9 @@
+.scroll-container {
+	flex-grow: 1;
+	margin: -16px;
+	padding: 16px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
