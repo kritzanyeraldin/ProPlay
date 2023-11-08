@@ -1,8 +1,12 @@
 import React from 'react'
+import Leccion from './Components/Leccion'
+
 
 const Languages = () => {
     return (
-        <div>Languages</div>
+        <>
+            <Leccion></Leccion>
+        </>
     )
 }
 
