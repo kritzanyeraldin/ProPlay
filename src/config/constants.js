@@ -18,6 +18,7 @@ export const MOCKED_USER_PATHS = [
 	'/foro',
 	'/stadistic',
 	'/help',
+	'/feedback',
 ]
 
 export const MOCKED_ADMIN_PATHS = ['/profile', '/course', '/course/create']

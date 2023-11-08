@@ -9,6 +9,7 @@ import {
 	Help,
 	Course,
 	Leccion,
+	Feedback,
 } from './views'
 import { InternalLayout } from './layouts'
 import { addCourse } from './views/Course/components'
@@ -66,6 +67,10 @@ function App() {
 					<Route
 						path='/course/create'
 						Component={addCourse}
+					/>
+					<Route
+						path='/feedback'
+						Component={Feedback}
 					/>
 				</Route>
 			</Routes>

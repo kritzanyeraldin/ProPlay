@@ -48,6 +48,10 @@ const routes = [
 		label: 'Help',
 	},
 	{
+		path: '/feedback',
+		label: 'Feedback',
+	},
+	{
 		path: '/course',
 		label: 'Course',
 	},
