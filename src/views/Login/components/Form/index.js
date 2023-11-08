@@ -1,9 +1,20 @@
-import { Box, Button, TextField, Typography } from '@mui/material'
+import { Box, Button, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput, TextField, Typography } from '@mui/material'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { MOCKED_ADMIN, MOCKED_USER } from '../../../../config/constants'
+import { Visibility, VisibilityOff } from '@mui/icons-material'
 
 const Form = () => {
+	const [showPassword, setShowPassword] = useState(false);
+
+	const handleClickShowPassword = () => setShowPassword((show) => !show);
+
+	const handleMouseDownPassword = (event) => {
+		event.preventDefault();
+	};
+
+
+
 	const [credentials, setCredentials] = useState({
 		user: '',
 		password: '',
@@ -27,7 +38,7 @@ const Form = () => {
 		if (!user) return alert('No se pudo logear correctamente')
 
 		localStorage.setItem('user', JSON.stringify(user))
-		if (user.isAdmin) return navigate('/admin')
+		if (user.isAdmin) return navigate('/course')
 		if (!user.isAdmin) return navigate('/menu')
 	}
 
@@ -78,7 +89,7 @@ const Form = () => {
 					bgcolor='grey.500'
 					p={2}
 					gap={2}
-					alignItems='center'
+					justifyContent='center'
 					height={300}
 				>
 					<TextField
@@ -92,9 +103,38 @@ const Form = () => {
 							}))
 						}
 					/>
-					<TextField
+					<FormControl sx={{ m: 1, width: '25' }} variant="outlined" color='primary'>
+						<InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+						<OutlinedInput
+							id="outlined-adornment-password"
+							type={showPassword ? 'text' : 'password'}
+							value={credentials.password}
+							onChange={event =>
+								setCredentials(credentials => ({
+									...credentials,
+									password: event.target.value,
+								}))
+							}
+							endAdornment={
+								<InputAdornment position="end">
+									<IconButton
+										aria-label="toggle password visibility"
+										onClick={handleClickShowPassword}
+										onMouseDown={handleMouseDownPassword}
+										edge="end"
+									>
+										{showPassword ? <VisibilityOff /> : <Visibility />}
+									</IconButton>
+								</InputAdornment>
+							}
+							label="Password"
+						/>
+					</FormControl>
+
+					{/* <TextField
 						fullWidth
 						label='Password'
+						type='password'
 						value={credentials.password}
 						onChange={event =>
 							setCredentials(credentials => ({
@@ -102,10 +142,14 @@ const Form = () => {
 								password: event.target.value,
 							}))
 						}
-					/>
+					/> */}
+
 					<Button
 						variant='contained'
 						onClick={login}
+						sx={{
+							alignSelf:'center'
+						}}
 					>
 						Login
 					</Button>

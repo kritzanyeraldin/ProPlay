@@ -18,7 +18,7 @@ import {
 	useLocation,
 	useNavigate,
 } from 'react-router-dom'
-import { getAllowedRoutes } from '../../utils'
+import { getAllowedPaths, getAllowedRoutes } from '../../utils'
 
 const drawerWidth = 200
 
@@ -48,8 +48,8 @@ const routes = [
 		label: 'Help',
 	},
 	{
-		path: '/admin',
-		label: 'Admin',
+		path: '/course',
+		label: 'Course',
 	},
 ]
 
@@ -61,12 +61,13 @@ const InternalLayout = () => {
 	if (!userAsString) return <Navigate to='/login' />
 
 	const user = JSON.parse(userAsString)
+	const allowedPaths = getAllowedPaths(user)
 	const allowedRoutes = getAllowedRoutes(routes, user)
 
-	const isAllowed = allowedRoutes.some(route =>
+	const isAllowed = allowedPaths.some(path =>
 		matchPath(
 			{
-				path: route.path,
+				path,
 				end: true,
 			},
 			location.pathname
