@@ -48,8 +48,8 @@ const routes = [
 		label: 'Help',
 	},
 	{
-		path: '/admin',
-		label: 'Admin',
+		path: '/course',
+		label: 'Course',
 	},
 ]
 

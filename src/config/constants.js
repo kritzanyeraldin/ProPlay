@@ -19,4 +19,4 @@ export const MOCKED_USER_PATHS = [
 	'/help',
 ]
 
-export const MOCKED_ADMIN_PATHS = ['/profile', '/admin']
+export const MOCKED_ADMIN_PATHS = ['/profile', '/course','/course/create']

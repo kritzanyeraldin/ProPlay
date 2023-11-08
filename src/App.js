@@ -10,6 +10,7 @@ import {
 	Course,
 } from './views'
 import { InternalLayout } from './layouts'
+import { addCourse } from './views/Course/components'
 
 function App() {
 	return (
@@ -54,8 +55,12 @@ function App() {
 						Component={Help}
 					/>
 					<Route
-						path='/admin'
+						path='/course'
 						Component={Course}
+					/>
+					<Route
+						path='/course/create'
+						Component={addCourse}
 					/>
 				</Route>
 			</Routes>
