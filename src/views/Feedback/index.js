@@ -33,8 +33,8 @@ const Feedback = () => {
     <div>
       <Typography variant="h4">Cuestionario de Feedback</Typography>
 
-      <FormControl component="fieldset">
-        <FormLabel component="legend">Facilidad de Uso</FormLabel>
+      <FormControl fullWidth component="fieldset">
+        <FormLabel component="legend">¿La interfaz web fue fácil de navegar?</FormLabel>
         <RadioGroup
           row
           name="usability"
@@ -46,6 +46,102 @@ const Feedback = () => {
           <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
           <FormControlLabel value="Fácil" control={<Radio />} label="Fácil" />
           <FormControlLabel value="Muy fácil" control={<Radio />} label="Muy fácil" />
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl fullWidth component="fieldset">
+        <FormLabel component="legend">¿Cómo calificarías el diseño y la apariencia visual de la interfaz web?</FormLabel>
+        <RadioGroup
+          row
+          name="usability"
+          value={usability}
+          onChange={(event) => setUsability(event.target.value)}
+        >
+          <FormControlLabel value="Muy poco atractivo" control={<Radio />} label="Muy poco atractivo" />
+          <FormControlLabel value="Poco atractivo" control={<Radio />} label="Poco atractivo" />
+          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
+          <FormControlLabel value="Atractivo" control={<Radio />} label="Atractivo" />
+          <FormControlLabel value="Muy Atractivo" control={<Radio />} label="Muy Atractivo" />
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl fullWidth component="fieldset">
+        <FormLabel component="legend">¿La interfaz web proporcionó la información que estabas buscando de manera clara y comprensible?</FormLabel>
+        <RadioGroup
+          row
+          name="usability"
+          value={usability}
+          onChange={(event) => setUsability(event.target.value)}
+        >
+          <FormControlLabel value="Nada clara" control={<Radio />} label="Nada clara" />
+          <FormControlLabel value="Poco clara" control={<Radio />} label="Poco clara" />
+          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
+          <FormControlLabel value="Clara" control={<Radio />} label="Clara" />
+          <FormControlLabel value="Muy clara" control={<Radio />} label="Muy clara" />
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl fullWidth component="fieldset">
+        <FormLabel component="legend">¿La página web se cargó rápidamente?</FormLabel>
+        <RadioGroup
+          row
+          name="usability"
+          value={usability}
+          onChange={(event) => setUsability(event.target.value)}
+        >
+          <FormControlLabel value="Muy Lenta" control={<Radio />} label="Muy Lenta" />
+          <FormControlLabel value="Lenta" control={<Radio />} label="Lenta" />
+          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
+          <FormControlLabel value="Rápida" control={<Radio />} label="Rápida" />
+          <FormControlLabel value="Muy Rápida" control={<Radio />} label="Muy Rápida" />
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl fullWidth component="fieldset">
+        <FormLabel component="legend">¿La navegación por el sitio web fue intuitiva y lógica?</FormLabel>
+        <RadioGroup
+          row
+          name="usability"
+          value={usability}
+          onChange={(event) => setUsability(event.target.value)}
+        >
+          <FormControlLabel value="Muy Confusa" control={<Radio />} label="Muy Confusa" />
+          <FormControlLabel value="Confusa" control={<Radio />} label="Confusa" />
+          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
+          <FormControlLabel value="Intuitiva" control={<Radio />} label="Intuitiva" />
+          <FormControlLabel value="Muy Intuitiva" control={<Radio />} label="Muy Intuitiva" />
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl fullWidth component="fieldset">
+        <FormLabel component="legend">¿Las características y funciones del sitio web funcionaron como esperabas?</FormLabel>
+        <RadioGroup
+          row
+          name="usability"
+          value={usability}
+          onChange={(event) => setUsability(event.target.value)}
+        >
+          <FormControlLabel value="No funcionaron en absoluto" control={<Radio />} label="No funcionaron en absoluto" />
+          <FormControlLabel value="Tuvieron problemas" control={<Radio />} label="Tuvieron problemas" />
+          <FormControlLabel value="Funcionaron en su mayoría" control={<Radio />} label="Funcionaron en su mayoría" />
+          <FormControlLabel value="Funcionaron bien" control={<Radio />} label="Funcionaron bien" />
+          <FormControlLabel value="Funcionaron perfectamente" control={<Radio />} label="Funcionaron perfectamente" />
+        </RadioGroup>
+      </FormControl>
+
+      <FormControl fullWidth component="fieldset">
+        <FormLabel component="legend">En general, ¿cómo calificarías tu experiencia con la interfaz web?</FormLabel>
+        <RadioGroup
+          row
+          name="usability"
+          value={usability}
+          onChange={(event) => setUsability(event.target.value)}
+        >
+          <FormControlLabel value="Muy negativa" control={<Radio />} label="Muy negativa" />
+          <FormControlLabel value="Negativa" control={<Radio />} label="Negativa" />
+          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
+          <FormControlLabel value="Positiva" control={<Radio />} label="Positiva" />
+          <FormControlLabel value="Muy Positiva" control={<Radio />} label="Muy Positiva" />
         </RadioGroup>
       </FormControl>
 
