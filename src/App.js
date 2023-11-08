@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
-import { Languages, Login, Menu, Profile, Foro, Stadistic, Help } from './views'
-import { InternalLayout } from './layouts'
+import { Languages, Login, Menu, Profile, Foro, Stadistic, Help, AdminU } from './views'
+import { InternalLayout, InternalLayoutAdmin } from './layouts'
 
 
 
@@ -45,6 +45,14 @@ function App() {
 						Component={Help}
 					>
 					</Route>
+				</Route>
+
+				
+				<Route Component={InternalLayoutAdmin}>
+				<Route
+					path='/1'
+					Component={AdminU}
+					></Route>
 				</Route>
 			</Routes>
 		</>
