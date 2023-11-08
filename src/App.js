@@ -8,6 +8,7 @@ import {
 	Stadistic,
 	Help,
 	Course,
+	Leccion,
 } from './views'
 import { InternalLayout } from './layouts'
 import { addCourse } from './views/Course/components'
@@ -43,6 +44,10 @@ function App() {
 						Component={Languages}
 					/>
 					<Route
+						path='/languages/lesson'
+						Component={Leccion}
+					/>
+					<Route
 						path='/foro'
 						Component={Foro}
 					/>
@@ -69,4 +74,3 @@ function App() {
 }
 
 export default App
-
