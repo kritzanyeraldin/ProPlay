@@ -1,7 +1,7 @@
 import { Box, TextField } from '@mui/material'
 import React from 'react'
 
-export const AdminU = () => {
+export const Course = () => {
   return (
     <Box
     bgcolor='gray'
@@ -24,4 +24,4 @@ export const AdminU = () => {
   )
 }
 
-export default AdminU
+export default Course

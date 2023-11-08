@@ -7,7 +7,7 @@ import {
 	Foro,
 	Stadistic,
 	Help,
-	AdminU,
+	Course,
 } from './views'
 import { InternalLayout } from './layouts'
 
@@ -55,7 +55,7 @@ function App() {
 					/>
 					<Route
 						path='/admin'
-						Component={AdminU}
+						Component={Course}
 					/>
 				</Route>
 			</Routes>
