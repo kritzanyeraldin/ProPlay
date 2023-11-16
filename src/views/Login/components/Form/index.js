@@ -54,12 +54,13 @@ const Form = () => {
 
   return (
     <Box
-      flexGrow={1}
+      flexGrow={2}
       display="flex"
       justifyContent="center"
       alignItems="center"
+      bgcolor='primary.main'
     >
-      <Box display="flex" flexDirection="column" width={400} py={10}>
+      <Box display="flex" flexDirection="column"  width='50%' borderRadius={10}>
         <Box
           display="flex"
           flexDirection="column"
@@ -69,6 +70,8 @@ const Form = () => {
           bgcolor="grey.300"
           p={2}
           height={200}
+          borderRadius='15px 15px 0px 0px'
+          // flexGrow={1}
         >
           <Typography fontSize={24} fontWeight="bold">
             Welcome
@@ -93,6 +96,7 @@ const Form = () => {
           gap={2}
           justifyContent="center"
           height={300}
+          borderRadius='0px 0px 15px 15px'
         >
           <TextField
             fullWidth
