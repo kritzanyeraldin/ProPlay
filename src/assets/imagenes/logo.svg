@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<svg width="377.8496" height="409.8516" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+
+ <style>.aa2O-D20rgJ0filter-floo7512f6c4-d35c-4a9e-9d42-ba3342e5d362 {flood-color:#95A1D2;flood-opacity:1;}.aD6z1nYkhcolor7512f6c4-d35c-4a9e-9d42-ba3342e5d362 {fill:#2EA6A6;fill-opacity:1;}.aD6z1nYkhstrokeColor-str7512f6c4-d35c-4a9e-9d42-ba3342e5d362 {stroke:#03086B;stroke-opacity:1;}.aHsFB6mEE6colors-07512f6c4-d35c-4a9e-9d42-ba3342e5d362 {fill:#647DBE;fill-opacity:1;}.aHsFB6mEE6colors-17512f6c4-d35c-4a9e-9d42-ba3342e5d362 {fill:#F539B3;fill-opacity:1;}.aHsFB6mEE6colors-27512f6c4-d35c-4a9e-9d42-ba3342e5d362 {fill:#F539BD;fill-opacity:1;}.ai0NrGVRvc0filter-floo7512f6c4-d35c-4a9e-9d42-ba3342e5d362 {flood-color:#322DA2;flood-opacity:0.91;}.aLgOaV3zRcolors-07512f6c4-d35c-4a9e-9d42-ba3342e5d362 {fill:#E1E8FB;fill-opacity:1;}.aRWrrEA-PR0filter-floo7512f6c4-d35c-4a9e-9d42-ba3342e5d362 {flood-color:#E9B0D6;flood-opacity:0.5;}.atUk6sjh6M0filter-floo7512f6c4-d35c-4a9e-9d42-ba3342e5d362 {flood-color:#1D0BC4;flood-opacity:0.89;}.icon27512f6c4-d35c-4a9e-9d42-ba3342e5d362 {fill:#F539B3;fill-opacity:1;}.icon3-str7512f6c4-d35c-4a9e-9d42-ba3342e5d362 {stroke:#F539BD;stroke-opacity:1;}.icon37512f6c4-d35c-4a9e-9d42-ba3342e5d362 {fill:#F539BD;fill-opacity:1;}.shape-floo7512f6c4-d35c-4a9e-9d42-ba3342e5d362 {flood-color:#2525CE;flood-opacity:1;}</style>
+ <defs>
+  <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="1167.6" id="7512f6c4-d35c-4a9e-9d42-ba3342e5d362a2O-D20rgJ" primitiveUnits="userSpaceOnUse" width="1518" x="0" y="0">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="7"/>
+   <feOffset dx="2.88" dy="2.88" result="a10mmH5HFLzj"/>
+   <feFlood flood-color="#95A1D2" flood-opacity="1" in="a10mmH5HFLzj"/>
+   <feComposite in2="a10mmH5HFLzj" operator="in" result="OouIW7t5tpH"/>
+   <feMerge>
+    <feMergeNode in="OouIW7t5tpH"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+   <feGaussianBlur result="NmDOxnLfPEx" stdDeviation="10"/>
+  </filter>
+  <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="1167.6" id="7512f6c4-d35c-4a9e-9d42-ba3342e5d362i0NrGVRvc" primitiveUnits="userSpaceOnUse" width="1518" x="0" y="0">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+   <feOffset dx="0" dy="0" result="fMdOltRn8lJ"/>
+   <feFlood flood-color="#322DA2" flood-opacity="0.91" in="fMdOltRn8lJ"/>
+   <feComposite in2="fMdOltRn8lJ" operator="in" result="Pxz7NfzIRVW"/>
+   <feMerge>
+    <feMergeNode in="Pxz7NfzIRVW"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g filter="url(#7512f6c4-d35c-4a9e-9d42-ba3342e5d362a2O-D20rgJ)" id="svg_13">
+   <g id="svg_5">
+    <svg height="134" id="svg_14" preserveAspectRatio="none" version="1.1" viewBox="2 2 60 60" width="134" x="124.5" y="71.27">
+     <g class="aHsFB6mEE6colors-07512f6c4-d35c-4a9e-9d42-ba3342e5d362" id="svg_15" transform="matrix(1 0 0 1 0 0)">
+      <g data-name="coding-programer-web design-programing-developer" id="svg_16">
+       <path d="m29.17,17.55a1,1 0 0 0 1.38,0.28l3,-2a1,1 0 0 0 0,-1.66l-3,-2a1,1 0 0 0 -1.1,1.66l1.75,1.17l-1.75,1.17a1,1 0 0 0 -0.28,1.38z" id="svg_17"/>
+       <path d="m22.5,18.87a0.99,0.99 0 0 0 0.5,0.13a1,1 0 0 0 0.87,-0.5l4,-7a1,1 0 1 0 -1.74,-0.99l-4,7a1,1 0 0 0 0.37,1.36z" id="svg_18"/>
+       <path d="m22,23l2,0a1,1 0 0 0 0,-2l-2,0a1,1 0 0 0 0,2z" id="svg_19"/>
+       <path d="m22,27l14,0a1,1 0 0 0 0,-2l-14,0a1,1 0 0 0 0,2z" id="svg_20"/>
+       <path d="m27,22a1,1 0 0 0 1,1l14,0a1,1 0 0 0 0,-2l-14,0a1,1 0 0 0 -1,1z" id="svg_21"/>
+       <path d="m42,25l-2,0a1,1 0 0 0 0,2l2,0a1,1 0 0 0 0,-2z" id="svg_22"/>
+       <path d="m22,31l2,0a1,1 0 0 0 0,-2l-2,0a1,1 0 0 0 0,2z" id="svg_23"/>
+       <path d="m42,29l-14,0a1,1 0 0 0 0,2l14,0a1,1 0 0 0 0,-2z" id="svg_24"/>
+       <path d="m58,38.84l0,-33.84a3.01,3.01 0 0 0 -3,-3l-46,0a3.01,3.01 0 0 0 -3,3l0,33.84l-4,12l0,2.16a3.01,3.01 0 0 0 3,3l7,0l0,0.17a2.96,2.96 0 0 0 0.88,2.12l0.83,0.83a0.99,0.99 0 0 1 0.29,0.71l0,1.17a1,1 0 0 0 2,0l0,-1.17a2.96,2.96 0 0 0 -0.88,-2.12l-0.83,-0.83a0.99,0.99 0 0 1 -0.29,-0.71l0,-9.67a0.5,0.5 0 0 1 1,0l0,3.5a1,1 0 0 0 2,0l0,-5.5a0.5,0.5 0 0 1 1,0l0,5.5a1,1 0 0 0 2,0l0,-6.5a0.5,0.5 0 0 1 1,0l0,6.5a1,1 0 0 0 2,0l0,-5.5a0.5,0.5 0 0 1 1,0l0,8.5a1,1 0 0 0 2,0l0,-3l0.5,0a0.5,0.5 0 0 1 0.5,0.5l0,5.67a0.99,0.99 0 0 1 -0.29,0.71l-0.83,0.83a2.96,2.96 0 0 0 -0.88,2.12l0,1.17a1,1 0 0 0 2,0l0,-1.17a0.99,0.99 0 0 1 0.29,-0.71l0.83,-0.83a2.96,2.96 0 0 0 0.88,-2.12l0,-0.17l6,0l0,0.17a2.96,2.96 0 0 0 0.88,2.12l0.83,0.83a0.99,0.99 0 0 1 0.29,0.71l0,1.17a1,1 0 0 0 2,0l0,-1.17a2.96,2.96 0 0 0 -0.88,-2.12l-0.83,-0.83a0.99,0.99 0 0 1 -0.29,-0.71l0,-5.67a0.5,0.5 0 0 1 0.5,-0.5l0.5,0l0,3a1,1 0 0 0 2,0l0,-8.5a0.5,0.5 0 0 1 1,0l0,5.5a1,1 0 0 0 2,0l0,-6.5a0.5,0.5 0 0 1 1,0l0,6.5a1,1 0 0 0 2,0l0,-5.5a0.5,0.5 0 0 1 1,0l0,5.5a1,1 0 0 0 2,0l0,-3.5a0.5,0.5 0 0 1 1,0l0,9.67a0.99,0.99 0 0 1 -0.29,0.71l-0.83,0.83a2.96,2.96 0 0 0 -0.88,2.12l0,1.17a1,1 0 0 0 2,0l0,-1.17a0.99,0.99 0 0 1 0.29,-0.71l0.83,-0.83a2.96,2.96 0 0 0 0.88,-2.12l0,-0.17l7,0a3.01,3.01 0 0 0 3,-3l0,-2.16l-4,-12zm-50,-33.84a1,1 0 0 1 1,-1l46,0a1,1 0 0 1 1,1l0,33l-48,0l0,-33zm4,49l-7,0a1,1 0 0 1 -1,-1l0,-1l8,0l0,2zm23,0l-6,0l0,-2l6,0l0,2zm14.5,-10a2.35,2.35 0 0 0 -0.54,0.06a2.5,2.5 0 0 0 -2.46,-2.06a2.43,2.43 0 0 0 -0.89,0.17a2.49,2.49 0 0 0 -4.22,0a2.43,2.43 0 0 0 -0.89,-0.17a2.5,2.5 0 0 0 -2.5,2.5l0,3.5l-0.5,0a2.5,2.5 0 0 0 -2.45,2l-6.1,0a2.5,2.5 0 0 0 -2.45,-2l-0.5,0l0,-3.5a2.5,2.5 0 0 0 -2.5,-2.5a2.43,2.43 0 0 0 -0.89,0.17a2.49,2.49 0 0 0 -4.22,0a2.43,2.43 0 0 0 -0.89,-0.17a2.5,2.5 0 0 0 -2.46,2.06a2.35,2.35 0 0 0 -0.54,-0.06a2.5,2.5 0 0 0 -2.5,2.5l0,3.5l-7.61,0l3.33,-10l48.56,0l3.33,10l-7.61,0l0,-3.5a2.5,2.5 0 0 0 -2.5,-2.5zm10.5,9a1,1 0 0 1 -1,1l-7,0l0,-2l8,0l0,1z" id="svg_25"/>
+       <path d="m53,6l-42,0a1,1 0 0 0 -1,1l0,28a1,1 0 0 0 1,1l42,0a1,1 0 0 0 1,-1l0,-28a1,1 0 0 0 -1,-1zm-1,28l-40,0l0,-26l40,0l0,26z" id="svg_26"/>
+       <path d="m11,42l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_27"/>
+       <path d="m10,46l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_28"/>
+       <path d="m53,44l1,0a1,1 0 0 0 0,-2l-1,0a1,1 0 0 0 0,2z" id="svg_29"/>
+       <path d="m54,46a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2l-1,0z" id="svg_30"/>
+       <path d="m30,42l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_31"/>
+       <path d="m35,42l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_32"/>
+       <path d="m30,46l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_33"/>
+       <path d="m35,46l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_34"/>
+       <path d="m20.83,17.55a1,1 0 0 1 -1.38,0.28l-3,-2a1,1 0 0 1 0,-1.66l3,-2a1,1 0 1 1 1.1,1.66l-1.75,1.17l1.75,1.17a1,1 0 0 1 0.28,1.38z" id="svg_35"/>
+      </g>
+     </g>
+    </svg>
+   </g>
+  </g>
+  <g filter="url(#7512f6c4-d35c-4a9e-9d42-ba3342e5d362i0NrGVRvc)" id="svg_36">
+   <g id="svg_6">
+    <svg height="134" id="svg_37" preserveAspectRatio="none" version="1.1" viewBox="2 2 60 60" width="134" x="118.5" y="68.27">
+     <g class="aLgOaV3zRcolors-07512f6c4-d35c-4a9e-9d42-ba3342e5d362" id="svg_38" transform="matrix(1 0 0 1 0 0)">
+      <g data-name="coding-programer-web design-programing-developer" id="svg_39">
+       <path d="m29.17,17.55a1,1 0 0 0 1.38,0.28l3,-2a1,1 0 0 0 0,-1.66l-3,-2a1,1 0 0 0 -1.1,1.66l1.75,1.17l-1.75,1.17a1,1 0 0 0 -0.28,1.38z" id="svg_40"/>
+       <path d="m22.5,18.87a0.99,0.99 0 0 0 0.5,0.13a1,1 0 0 0 0.87,-0.5l4,-7a1,1 0 1 0 -1.74,-0.99l-4,7a1,1 0 0 0 0.37,1.36z" id="svg_41"/>
+       <path d="m22,23l2,0a1,1 0 0 0 0,-2l-2,0a1,1 0 0 0 0,2z" id="svg_42"/>
+       <path d="m22,27l14,0a1,1 0 0 0 0,-2l-14,0a1,1 0 0 0 0,2z" id="svg_43"/>
+       <path d="m27,22a1,1 0 0 0 1,1l14,0a1,1 0 0 0 0,-2l-14,0a1,1 0 0 0 -1,1z" id="svg_44"/>
+       <path d="m42,25l-2,0a1,1 0 0 0 0,2l2,0a1,1 0 0 0 0,-2z" id="svg_45"/>
+       <path d="m22,31l2,0a1,1 0 0 0 0,-2l-2,0a1,1 0 0 0 0,2z" id="svg_46"/>
+       <path d="m42,29l-14,0a1,1 0 0 0 0,2l14,0a1,1 0 0 0 0,-2z" id="svg_47"/>
+       <path d="m58,38.84l0,-33.84a3.01,3.01 0 0 0 -3,-3l-46,0a3.01,3.01 0 0 0 -3,3l0,33.84l-4,12l0,2.16a3.01,3.01 0 0 0 3,3l7,0l0,0.17a2.96,2.96 0 0 0 0.88,2.12l0.83,0.83a0.99,0.99 0 0 1 0.29,0.71l0,1.17a1,1 0 0 0 2,0l0,-1.17a2.96,2.96 0 0 0 -0.88,-2.12l-0.83,-0.83a0.99,0.99 0 0 1 -0.29,-0.71l0,-9.67a0.5,0.5 0 0 1 1,0l0,3.5a1,1 0 0 0 2,0l0,-5.5a0.5,0.5 0 0 1 1,0l0,5.5a1,1 0 0 0 2,0l0,-6.5a0.5,0.5 0 0 1 1,0l0,6.5a1,1 0 0 0 2,0l0,-5.5a0.5,0.5 0 0 1 1,0l0,8.5a1,1 0 0 0 2,0l0,-3l0.5,0a0.5,0.5 0 0 1 0.5,0.5l0,5.67a0.99,0.99 0 0 1 -0.29,0.71l-0.83,0.83a2.96,2.96 0 0 0 -0.88,2.12l0,1.17a1,1 0 0 0 2,0l0,-1.17a0.99,0.99 0 0 1 0.29,-0.71l0.83,-0.83a2.96,2.96 0 0 0 0.88,-2.12l0,-0.17l6,0l0,0.17a2.96,2.96 0 0 0 0.88,2.12l0.83,0.83a0.99,0.99 0 0 1 0.29,0.71l0,1.17a1,1 0 0 0 2,0l0,-1.17a2.96,2.96 0 0 0 -0.88,-2.12l-0.83,-0.83a0.99,0.99 0 0 1 -0.29,-0.71l0,-5.67a0.5,0.5 0 0 1 0.5,-0.5l0.5,0l0,3a1,1 0 0 0 2,0l0,-8.5a0.5,0.5 0 0 1 1,0l0,5.5a1,1 0 0 0 2,0l0,-6.5a0.5,0.5 0 0 1 1,0l0,6.5a1,1 0 0 0 2,0l0,-5.5a0.5,0.5 0 0 1 1,0l0,5.5a1,1 0 0 0 2,0l0,-3.5a0.5,0.5 0 0 1 1,0l0,9.67a0.99,0.99 0 0 1 -0.29,0.71l-0.83,0.83a2.96,2.96 0 0 0 -0.88,2.12l0,1.17a1,1 0 0 0 2,0l0,-1.17a0.99,0.99 0 0 1 0.29,-0.71l0.83,-0.83a2.96,2.96 0 0 0 0.88,-2.12l0,-0.17l7,0a3.01,3.01 0 0 0 3,-3l0,-2.16l-4,-12zm-50,-33.84a1,1 0 0 1 1,-1l46,0a1,1 0 0 1 1,1l0,33l-48,0l0,-33zm4,49l-7,0a1,1 0 0 1 -1,-1l0,-1l8,0l0,2zm23,0l-6,0l0,-2l6,0l0,2zm14.5,-10a2.35,2.35 0 0 0 -0.54,0.06a2.5,2.5 0 0 0 -2.46,-2.06a2.43,2.43 0 0 0 -0.89,0.17a2.49,2.49 0 0 0 -4.22,0a2.43,2.43 0 0 0 -0.89,-0.17a2.5,2.5 0 0 0 -2.5,2.5l0,3.5l-0.5,0a2.5,2.5 0 0 0 -2.45,2l-6.1,0a2.5,2.5 0 0 0 -2.45,-2l-0.5,0l0,-3.5a2.5,2.5 0 0 0 -2.5,-2.5a2.43,2.43 0 0 0 -0.89,0.17a2.49,2.49 0 0 0 -4.22,0a2.43,2.43 0 0 0 -0.89,-0.17a2.5,2.5 0 0 0 -2.46,2.06a2.35,2.35 0 0 0 -0.54,-0.06a2.5,2.5 0 0 0 -2.5,2.5l0,3.5l-7.61,0l3.33,-10l48.56,0l3.33,10l-7.61,0l0,-3.5a2.5,2.5 0 0 0 -2.5,-2.5zm10.5,9a1,1 0 0 1 -1,1l-7,0l0,-2l8,0l0,1z" id="svg_48"/>
+       <path d="m53,6l-42,0a1,1 0 0 0 -1,1l0,28a1,1 0 0 0 1,1l42,0a1,1 0 0 0 1,-1l0,-28a1,1 0 0 0 -1,-1zm-1,28l-40,0l0,-26l40,0l0,26z" id="svg_49"/>
+       <path d="m11,42l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_50"/>
+       <path d="m10,46l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_51"/>
+       <path d="m53,44l1,0a1,1 0 0 0 0,-2l-1,0a1,1 0 0 0 0,2z" id="svg_52"/>
+       <path d="m54,46a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2l-1,0z" id="svg_53"/>
+       <path d="m30,42l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_54"/>
+       <path d="m35,42l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_55"/>
+       <path d="m30,46l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_56"/>
+       <path d="m35,46l-1,0a1,1 0 0 0 0,2l1,0a1,1 0 0 0 0,-2z" id="svg_57"/>
+       <path d="m20.83,17.55a1,1 0 0 1 -1.38,0.28l-3,-2a1,1 0 0 1 0,-1.66l3,-2a1,1 0 1 1 1.1,1.66l-1.75,1.17l1.75,1.17a1,1 0 0 1 0.28,1.38z" id="svg_58"/>
+      </g>
+     </g>
+    </svg>
+   </g>
+  </g>
+ </g>
+</svg>

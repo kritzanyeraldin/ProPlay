@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Typography, TextField, Button, Rating, FormControlLabel, RadioGroup, Radio, FormControl, FormLabel, FormGroup, Checkbox } from '@mui/material';
+import { Box, Typography, TextField, Button, FormControlLabel, RadioGroup, Radio, FormControl, FormLabel, Checkbox } from '@mui/material';
 
 const Feedback = () => {
   const [usability, setUsability] = useState('');
