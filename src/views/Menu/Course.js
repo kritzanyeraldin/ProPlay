@@ -3,7 +3,7 @@ import { Box, Button, IconButton } from '@mui/material'
 import DeleteIcon from '@mui/icons-material/Delete'
 import { Link } from 'react-router-dom'
 
-const Course = ({ course, onStartClick, onPracticeClick, onDeleteClick }) => {
+const Course = ({ course, onDeleteClick }) => {
 	const courseContainerStyle = {
 		width: '250px',
 		margin: '10px',
@@ -67,7 +67,9 @@ const Course = ({ course, onStartClick, onPracticeClick, onDeleteClick }) => {
 				</Button>
 				<Button
 					style={buttonStyle}
-					onClick={() => onPracticeClick(course.id)}
+					LinkComponent={Link}
+					to='/languages/lesson/quiz'
+					// onClick={() => onPracticeClick(course.id)}
 				>
 					Practicar
 				</Button>
