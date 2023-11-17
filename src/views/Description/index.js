@@ -10,7 +10,15 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Link } from 'react-router-dom'
 
-const Description = ({ language, onClose }) => {
+const language = {
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
+    title: "Python",
+    width: "30%",
+  }
+
+
+const Description = () => {
+
 	const [expanded, setExpanded] = useState(false)
 
 	const handleAccordionChange = panel => (event, isExpanded) => {
@@ -40,14 +48,15 @@ const Description = ({ language, onClose }) => {
 						variant='outlined'
 						color='primary'
 						style={buttonStyle}
-						onClick={onClose}
+						LinkComponent={Link}
+						to='/languages'
 					>
 						Volver
 					</Button>
-					<Typography variant='h5'>{language.name}</Typography>
+					<Typography variant='h5'>{language.title}</Typography>
 					<img
-						src={language.image}
-						alt={`Lenguaje: ${language.name}`}
+						src={language.url}
+						alt={`Lenguaje: ${language.title}`}
 						style={imageStyle}
 					/>
 					<Typography variant='body1'>{language.description}</Typography>

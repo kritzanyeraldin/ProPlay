@@ -16,6 +16,7 @@ export const MOCKED_USER_PATHS = [
 	'/languages',
 	'/languages/lesson',
 	'/languages/lesson/quiz',
+	'/languages/description',
 	'/foro',
 	'/stadistic',
 	'/help',
