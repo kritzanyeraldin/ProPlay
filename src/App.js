@@ -10,7 +10,8 @@ import {
   Course,
   Leccion,
   Feedback,
-  Signup
+  Signup,
+  Quiz,
 } from "./views";
 import { InternalLayout } from "./layouts";
 import { addCourse } from "./views/Course/components";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/menu" Component={Menu} />
           <Route path="/languages" Component={Languages} />
           <Route path="/languages/lesson" Component={Leccion} />
+          <Route path="/languages/lesson/quiz" Component={Quiz}/>
           <Route path="/foro" Component={Foro} />
           <Route path="/stadistic" Component={Stadistic} />
           <Route path="/help" Component={Help} />
