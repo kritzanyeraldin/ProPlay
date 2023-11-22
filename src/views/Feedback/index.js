@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Typography, TextField, Button, FormControlLabel, RadioGroup, Radio, FormControl, FormLabel, Checkbox } from '@mui/material';
 
+
 const Feedback = () => {
   const [usability, setUsability] = useState('');
   const [design, setDesign] = useState(0);
@@ -34,114 +35,114 @@ const Feedback = () => {
       <Typography variant="h4">Cuestionario de Feedback</Typography>
 
       <FormControl fullWidth component="fieldset">
-        <FormLabel component="legend">¿La interfaz web fue fácil de navegar?</FormLabel>
+        <FormLabel component="legend" style={{color:"black"}}>¿La interfaz web fue fácil de navegar?</FormLabel>
         <RadioGroup
           row
           name="usability"
           value={usability}
           onChange={(event) => setUsability(event.target.value)}
         >
-          <FormControlLabel value="Muy difícil" control={<Radio />} label="Muy difícil" />
-          <FormControlLabel value="Difícil" control={<Radio />} label="Difícil" />
-          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
-          <FormControlLabel value="Fácil" control={<Radio />} label="Fácil" />
-          <FormControlLabel value="Muy fácil" control={<Radio />} label="Muy fácil" />
+          <FormControlLabel value="Muy difícil" control={<Radio style={{color:"black"}}/>} label="Muy difícil" />
+          <FormControlLabel value="Difícil" control={<Radio style={{color:"black"}}/>} label="Difícil" />
+          <FormControlLabel value="Neutro" control={<Radio style={{color:"black"}}/>} label="Neutro" />
+          <FormControlLabel value="Fácil" control={<Radio style={{color:"black"}}/>} label="Fácil" />
+          <FormControlLabel value="Muy fácil" control={<Radio style={{color:"black"}}/>} label="Muy fácil" />
         </RadioGroup>
       </FormControl>
 
       <FormControl fullWidth component="fieldset">
-        <FormLabel component="legend">¿Cómo calificarías el diseño y la apariencia visual de la interfaz web?</FormLabel>
+        <FormLabel component="legend" style={{color:"black"}}>¿Cómo calificarías el diseño y la apariencia visual de la interfaz web?</FormLabel>
         <RadioGroup
           row
-          name="usability"
-          value={usability}
-          onChange={(event) => setUsability(event.target.value)}
+          name="design"
+          value={design}
+          onChange={(event) => setDesign(event.target.value)}
         >
-          <FormControlLabel value="Muy poco atractivo" control={<Radio />} label="Muy poco atractivo" />
-          <FormControlLabel value="Poco atractivo" control={<Radio />} label="Poco atractivo" />
-          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
-          <FormControlLabel value="Atractivo" control={<Radio />} label="Atractivo" />
-          <FormControlLabel value="Muy Atractivo" control={<Radio />} label="Muy Atractivo" />
+          <FormControlLabel value="Muy poco atractivo" control={<Radio style={{color:"black"}}/>} label="Muy poco atractivo" />
+          <FormControlLabel value="Poco atractivo" control={<Radio style={{color:"black"}}/>} label="Poco atractivo" />
+          <FormControlLabel value="Neutro" control={<Radio style={{color:"black"}}/>} label="Neutro" />
+          <FormControlLabel value="Atractivo" control={<Radio style={{color:"black"}}/>} label="Atractivo" />
+          <FormControlLabel value="Muy Atractivo" control={<Radio style={{color:"black"}}/>} label="Muy Atractivo" />
         </RadioGroup>
       </FormControl>
 
       <FormControl fullWidth component="fieldset">
-        <FormLabel component="legend">¿La interfaz web proporcionó la información que estabas buscando de manera clara y comprensible?</FormLabel>
+        <FormLabel component="legend" style={{color:"black"}}>¿La interfaz web proporcionó la información que estabas buscando de manera clara y comprensible?</FormLabel>
         <RadioGroup
           row
-          name="usability"
-          value={usability}
-          onChange={(event) => setUsability(event.target.value)}
+          name="clarity"
+          value={clarity}
+          onChange={(event) => setClarity(event.target.value)}
         >
-          <FormControlLabel value="Nada clara" control={<Radio />} label="Nada clara" />
-          <FormControlLabel value="Poco clara" control={<Radio />} label="Poco clara" />
-          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
-          <FormControlLabel value="Clara" control={<Radio />} label="Clara" />
-          <FormControlLabel value="Muy clara" control={<Radio />} label="Muy clara" />
+          <FormControlLabel value="Nada clara" control={<Radio style={{color:"black"}}/>} label="Nada clara" />
+          <FormControlLabel value="Poco clara" control={<Radio style={{color:"black"}}/>} label="Poco clara" />
+          <FormControlLabel value="Neutro" control={<Radio style={{color:"black"}}/>} label="Neutro" />
+          <FormControlLabel value="Clara" control={<Radio style={{color:"black"}}/>} label="Clara" />
+          <FormControlLabel value="Muy clara" control={<Radio style={{color:"black"}}/>} label="Muy clara" />
         </RadioGroup>
       </FormControl>
 
       <FormControl fullWidth component="fieldset">
-        <FormLabel component="legend">¿La página web se cargó rápidamente?</FormLabel>
+        <FormLabel component="legend" style={{color:"black"}}>¿La página web se cargó rápidamente?</FormLabel>
         <RadioGroup
           row
-          name="usability"
-          value={usability}
-          onChange={(event) => setUsability(event.target.value)}
+          name="speed"
+          value={speed}
+          onChange={(event) => setSpeed(event.target.value)}
         >
-          <FormControlLabel value="Muy Lenta" control={<Radio />} label="Muy Lenta" />
-          <FormControlLabel value="Lenta" control={<Radio />} label="Lenta" />
-          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
-          <FormControlLabel value="Rápida" control={<Radio />} label="Rápida" />
-          <FormControlLabel value="Muy Rápida" control={<Radio />} label="Muy Rápida" />
+          <FormControlLabel value="Muy Lenta" control={<Radio style={{color:"black"}}/>} label="Muy Lenta" />
+          <FormControlLabel value="Lenta" control={<Radio style={{color:"black"}}/>} label="Lenta" />
+          <FormControlLabel value="Neutro" control={<Radio style={{color:"black"}}/>} label="Neutro" />
+          <FormControlLabel value="Rápida" control={<Radio style={{color:"black"}}/>} label="Rápida" />
+          <FormControlLabel value="Muy Rápida" control={<Radio style={{color:"black"}}/>} label="Muy Rápida" />
         </RadioGroup>
       </FormControl>
 
-      <FormControl fullWidth component="fieldset">
+      <FormControl fullWidth component="fieldset" style={{color:"black"}}>
         <FormLabel component="legend">¿La navegación por el sitio web fue intuitiva y lógica?</FormLabel>
         <RadioGroup
           row
-          name="usability"
-          value={usability}
-          onChange={(event) => setUsability(event.target.value)}
+          name="navigation"
+          value={navigation}
+          onChange={(event) => setNavigation(event.target.value)}
         >
-          <FormControlLabel value="Muy Confusa" control={<Radio />} label="Muy Confusa" />
-          <FormControlLabel value="Confusa" control={<Radio />} label="Confusa" />
-          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
-          <FormControlLabel value="Intuitiva" control={<Radio />} label="Intuitiva" />
-          <FormControlLabel value="Muy Intuitiva" control={<Radio />} label="Muy Intuitiva" />
+          <FormControlLabel value="Muy Confusa" control={<Radio style={{color:"black"}}/>} label="Muy Confusa" />
+          <FormControlLabel value="Confusa" control={<Radio style={{color:"black"}}/>} label="Confusa" />
+          <FormControlLabel value="Neutro" control={<Radio style={{color:"black"}}/>} label="Neutro" />
+          <FormControlLabel value="Intuitiva" control={<Radio style={{color:"black"}}/>} label="Intuitiva" />
+          <FormControlLabel value="Muy Intuitiva" control={<Radio style={{color:"black"}}/>} label="Muy Intuitiva" />
         </RadioGroup>
       </FormControl>
 
       <FormControl fullWidth component="fieldset">
-        <FormLabel component="legend">¿Las características y funciones del sitio web funcionaron como esperabas?</FormLabel>
+        <FormLabel component="legend" style={{color:"black"}}>¿Las características y funciones del sitio web funcionaron como esperabas?</FormLabel>
         <RadioGroup
           row
-          name="usability"
-          value={usability}
-          onChange={(event) => setUsability(event.target.value)}
+          name="functionality"
+          value={functionality}
+          onChange={(event) => setFunctionality(event.target.value)}
         >
-          <FormControlLabel value="No funcionaron en absoluto" control={<Radio />} label="No funcionaron en absoluto" />
-          <FormControlLabel value="Tuvieron problemas" control={<Radio />} label="Tuvieron problemas" />
-          <FormControlLabel value="Funcionaron en su mayoría" control={<Radio />} label="Funcionaron en su mayoría" />
-          <FormControlLabel value="Funcionaron bien" control={<Radio />} label="Funcionaron bien" />
-          <FormControlLabel value="Funcionaron perfectamente" control={<Radio />} label="Funcionaron perfectamente" />
+          <FormControlLabel value="No funcionaron en absoluto" control={<Radio style={{color:"black"}}/>} label="No funcionaron en absoluto" />
+          <FormControlLabel value="Tuvieron problemas" control={<Radio style={{color:"black"}}/>} label="Tuvieron problemas" />
+          <FormControlLabel value="Funcionaron en su mayoría" control={<Radio style={{color:"black"}}/>} label="Funcionaron en su mayoría" />
+          <FormControlLabel value="Funcionaron bien" control={<Radio style={{color:"black"}}/>} label="Funcionaron bien" />
+          <FormControlLabel value="Funcionaron perfectamente" control={<Radio style={{color:"black"}}/>} label="Funcionaron perfectamente" />
         </RadioGroup>
       </FormControl>
 
       <FormControl fullWidth component="fieldset">
-        <FormLabel component="legend">En general, ¿cómo calificarías tu experiencia con la interfaz web?</FormLabel>
+        <FormLabel component="legend" style={{color:"black"}}>En general, ¿cómo calificarías tu experiencia con la interfaz web?</FormLabel>
         <RadioGroup
           row
-          name="usability"
-          value={usability}
-          onChange={(event) => setUsability(event.target.value)}
+          name="overallExperience"
+          value={overallExperience}
+          onChange={(event) => setOverallExperience(event.target.value)}
         >
-          <FormControlLabel value="Muy negativa" control={<Radio />} label="Muy negativa" />
-          <FormControlLabel value="Negativa" control={<Radio />} label="Negativa" />
-          <FormControlLabel value="Neutro" control={<Radio />} label="Neutro" />
-          <FormControlLabel value="Positiva" control={<Radio />} label="Positiva" />
-          <FormControlLabel value="Muy Positiva" control={<Radio />} label="Muy Positiva" />
+          <FormControlLabel value="Muy negativa" control={<Radio style={{color:"black"}}/>} label="Muy negativa" />
+          <FormControlLabel value="Negativa" control={<Radio style={{color:"black"}}/>} label="Negativa" />
+          <FormControlLabel value="Neutro" control={<Radio style={{color:"black"}}/>} label="Neutro" />
+          <FormControlLabel value="Positiva" control={<Radio style={{color:"black"}}/>} label="Positiva" />
+          <FormControlLabel value="Muy Positiva" control={<Radio style={{color:"black"}}/>} label="Muy Positiva" />
         </RadioGroup>
       </FormControl>
 
