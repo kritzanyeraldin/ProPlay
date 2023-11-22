@@ -1,5 +1,5 @@
 import { Box,  Typography } from "@mui/material";
-import icono3 from '/home/squi/Escritorio/ProPlay/src/assets/imagenes/icono3.png'
+import icono3 from '../../../../assets/imagenes/icono3.png'
 
 const Image = () => {
 
