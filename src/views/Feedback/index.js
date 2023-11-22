@@ -99,7 +99,7 @@ const Feedback = () => {
       </FormControl>
 
       <FormControl fullWidth component="fieldset" style={{color:"black"}}>
-        <FormLabel component="legend">¿La navegación por el sitio web fue intuitiva y lógica?</FormLabel>
+        <FormLabel component="legend" style={{color:"black"}}>¿La navegación por el sitio web fue intuitiva y lógica?</FormLabel>
         <RadioGroup
           row
           name="navigation"
@@ -163,6 +163,7 @@ const Feedback = () => {
       <FormControlLabel
         control={
           <Checkbox
+            style={{color:"black"}}
             checked={satisfied === 'Sí, estoy satisfecho'}
             onChange={(event) => setSatisfied(event.target.checked ? 'Sí, estoy satisfecho' : 'No estoy satisfecho')}
             name="satisfied"
