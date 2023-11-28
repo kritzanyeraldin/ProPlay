@@ -1,5 +1,5 @@
 import { Box,  Typography } from "@mui/material";
-import icono3 from '/home/squi/Escritorio/ProPlay/src/assets/imagenes/icono3.png'
+import icono from '../../../../assets/imagenes/icono.png'
 
 const Image = () => {
 
@@ -34,7 +34,7 @@ const Image = () => {
       >
       <img
         alt="SVG Image"
-        src={icono3}  style={{ width: '100%', height: 'auto' }}
+        src={icono}  style={{ width: '100%', height: 'auto' }}
       />
       </Box>
 
