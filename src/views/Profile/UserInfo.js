@@ -1,7 +1,11 @@
-import React from 'react';
-import { Box, Button, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Button, Typography, TextField } from '@mui/material';
 
 const UserInfo = () => {
+  const [isEditing, setIsEditing] = useState(false);
+  const [user, setUser] = useState('Nombre del usuario');
+  const [email, setEmail] = useState('correo@ejemplo.com');
+
   const roundedBoxStyle = {
     width: '90%',
     border: '1px solid #ccc',
@@ -21,6 +25,27 @@ const UserInfo = () => {
     backgroundColor: '#9E9E9E',
   };
 
+  const handleEdit = () => {
+    setIsEditing(true);
+  };
+
+  const handleSave = () => {
+    setIsEditing(false);
+    saveUser(user);
+    saveEmail(email);
+  };
+
+  const saveUser = (newUser) => {
+    // Simulando la llamada a una API o base de datos para guardar el nuevo usuario
+    console.log(`Usuario guardado: ${newUser}`);
+  };
+
+  const saveEmail = (newEmail) => {
+    // Simulando la llamada a una API o base de datos para guardar el nuevo correo electrónico
+    console.log(`Correo electrónico guardado: ${newEmail}`);
+  };
+
+
   return (
     <Box style={roundedBoxStyle} className="user-info">
       <Box className="user-avatar">
@@ -31,12 +56,35 @@ const UserInfo = () => {
         />
       </Box>
       <Box className="user-details">
-        <Typography variant="body1">User: Nombre del usuario</Typography>
-        <Typography variant="body1">Email: correo@ejemplo.com</Typography>
+        {isEditing ? (
+          <>
+            <TextField
+              label="User"
+              value={user}
+              onChange={(e) => setUser(e.target.value)}
+            />
+            <TextField
+              label="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </>
+        ) : (
+          <>
+            <Typography variant="body1">User: {user}</Typography>
+            <Typography variant="body1">Email: {email}</Typography>
+          </>
+        )}
       </Box>
-      <Button style={buttonStyle}>
-        Editar
-      </Button>
+      {isEditing ? (
+        <Button style={buttonStyle} onClick={handleSave}>
+          Guardar
+        </Button>
+      ) : (
+        <Button style={buttonStyle} onClick={handleEdit}>
+          Editar
+        </Button>
+      )}
     </Box>
   );
 };
