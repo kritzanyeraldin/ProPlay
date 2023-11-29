@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Course from './Course'; // Importa el componente Course
 
 const Menu = () => {
-  const courses = [
+  const initialCourses = [
     {
       id: 1,
       name: 'Python',
@@ -16,6 +16,8 @@ const Menu = () => {
     // Agrega más cursos según sea necesario
   ];
 
+  const [courses, setCourses] = useState(initialCourses);
+
   const handleStartClick = (courseId) => {
     console.log(`Iniciando el curso ${courseId}`);
   };
@@ -25,9 +27,11 @@ const Menu = () => {
   };
 
   const handleDeleteClick = (courseId) => {
-    console.log(`Eliminando el curso ${courseId}`);
+    // Filtrar los cursos y mantener solo aquellos que no coincidan con el courseId
+    const updatedCourses = courses.filter((course) => course.id !== courseId);
+    setCourses(updatedCourses);
   };
-
+  
   return (
     <div className="course-menu">
       <h2>Mis Cursos</h2>
