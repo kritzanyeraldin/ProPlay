@@ -29,11 +29,31 @@ const UserInfo = () => {
     setIsEditing(true);
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     setIsEditing(false);
     saveUser(user);
     saveEmail(email);
+    // Realizar la solicitud POST al backend
+    try {
+      const response = await fetch('URL_DEL_BACKEND/api/user', {
+        method: 'PUT', // Método HTTP para actualizar datos
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name: user, email }), // Datos a enviar al backend
+      });
+
+      if (response.ok) {
+        console.log('Datos actualizados exitosamente');
+        // Aquí podrías realizar acciones adicionales si la actualización fue exitosa
+      } else {
+        console.error('Error al actualizar los datos');
+      }
+    } catch (error) {
+      console.error('Error de red:', error);
+    }
   };
+
 
   const saveUser = (newUser) => {
     // Simulando la llamada a una API o base de datos para guardar el nuevo usuario
